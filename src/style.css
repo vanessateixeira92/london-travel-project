@@ -8,9 +8,20 @@ body {
   margin: 0 auto;
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  gap: 16px;
+}
+
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
-    url("../images/bg.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../images/london-header.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
@@ -47,13 +58,57 @@ header a {
   font-size: 14px;
   letter-spacing: 3px;
   line-height: 1;
+  font-weight: 700;
   padding: 16px 32px;
   margin-top: 32px;
   text-transform: uppercase;
   display: inline-block;
 }
 
-@media (max-width: 900px) {
+footer {
+  color: white;
+  background-image: linear-gradient(
+      rgba(39, 32, 68, 0.9),
+      rgba(39, 32, 68, 0.9)
+    ),
+    url("../images/london-footer.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+}
+
+footer h3 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: left;
+}
+
+footer p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  opacity: 0.7;
+}
+
+footer a {
+  color: white;
+  opacity: 0.7;
+}
+
+footer ul {
+  padding: 0;
+}
+
+footer li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 960px) {
   header {
     padding: 60px 0;
   }
