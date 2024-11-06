@@ -9,7 +9,7 @@ body {
 }
 
 .image {
-  max-width: 100%;
+  width: 100%;
   display: block;
 }
 
@@ -35,6 +35,10 @@ body {
   margin: 30px 0;
 }
 
+.card-header.grid.grid-2-columns {
+  grid-gap: 0;
+}
+
 .card-body {
   padding: 30px;
 }
@@ -45,6 +49,11 @@ body {
 
 .text-center {
   text-align: center;
+}
+
+.embed {
+  aspect-ratio: 1 / 1;
+  width: 100%;
 }
 
 .btn {
@@ -73,6 +82,7 @@ main h2 {
   text-align: left;
   opacity: 0.3;
   margin: 0;
+  text-transform: uppercase;
 }
 
 main h3 {
@@ -233,5 +243,13 @@ footer li {
 
   section {
     padding: 30px;
+  }
+
+  .card-header img {
+    display: none;
+  }
+
+  .embed {
+    aspect-ratio: 16 / 9;
   }
 }
